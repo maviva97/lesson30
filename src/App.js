@@ -3,12 +3,12 @@ import './styless.css';
 function App() {
  
     const [count, setCount] = useState(() => {
-      // Get initial value from local storage (or default to 0)
+     
       try {
         const storedCount = localStorage.getItem('myCounter');
         return storedCount ? parseInt(storedCount) : 0;
       } catch (error) {
-        // Handle potential parsing errors
+       
         return 0;
       }
     });
@@ -16,10 +16,10 @@ function App() {
     useEffect(() => {
       // Update local storage on count change
       localStorage.setItem('myCounter', count);
-    }, [count]); // Dependency array
+    }, [count]);
   
     const increment = () => setCount(prevCount => prevCount + 1);
-    const decrement = () => setCount(prevCount => Math.max(0, prevCount - 1)); // Ensure count doesn't go negative
+    const decrement = () => setCount(prevCount => Math.max(0, prevCount - 1)); 
   
   return ( 
  
