@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+}
+.my-button {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;   
+  }
+  .my-button:hover {
+    background-color: #3e8e41; /* Darker green on hover */
+  }
+  .counter {
+    width:200px;
+  border:30px solid coral;
+  padding:10px;
+  background-color:lightblue;
+  box-sizing:border-box;
+  }
